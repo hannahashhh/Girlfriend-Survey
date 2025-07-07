@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Girlfriend Survey</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Girlfriend Survey</h1>
+    <form action="https://formspree.io/f/xldnkzar" method="POST" id="quiz">
+        <div id="fullname-div">
+            <label for="fullname">What is my full name?</label>
+            <input type="text" name="fullname" id="fullname">
+        </div>
+        <div>
+             <label for="animal">If I were an animal, what would I be?</label>
+             <input type="text" id="animal" name="animal">
+        </div>
+        <div>
+            <label for="memory">What is your favorite memory of us?</label>
+            <input type="text" id="memory" name="memory">
+        </div>
+        <div>
+            <label>If you had to plan a perfect date, what would it be?</label>
+            <input type="text" id="date" name="name">
+        </div>
+        <div>
+            <label for="clothes">What’s one thing I wear that drives you crazy (in a good way)?</label>
+            <input type="text" id="clothes" name="clothes">
+        </div>
+        <div>
+            <label for="kissing">Rate my kissing skills: </label>
+            <select id="kissing" name="kissing">
+                <option selected="true" disabled="true">Choose Wisely...</option>
+                <option value="10">10</option>
+                <option value="10">10</option>
+                <option value="10">10</option>
+                <option value="10">10</option>
+                <option value="10">10</option>
+                <option value="10">10</option>
+                <option value="10">10</option>
+                <option value="10">10</option>
+                <option value="10">10</option>
+            </select>
+    </form>
+<script src="./script.js"></script>
+</body>
+</html>

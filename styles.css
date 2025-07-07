@@ -1,0 +1,74 @@
+* {
+    font-family: Chewy, sanserif;
+    
+}
+body {
+    background-image: linear-gradient(#FF5D8F,#FF87AB);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1 {
+    text-align: center;
+    color: #FFF0F3;
+    font-size: 60px;
+}
+form {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+div {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    padding: 10px;
+    font-size: 30px;
+     color: transparent;              /* hide fill */
+    -webkit-text-stroke: 1.5px #FFF0F3; /* thickness and outline color */         /* standard property (not widely supported yet) */
+  font-weight: bold;
+  font-size: 48px;
+}
+input, select {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    padding: 14px 20px;         /* this makes it taller */
+    font-size: 30px;
+    border: solid #FFB3C1 5px;
+    border-radius: 10px;
+    color: #FFB3C1;
+    background-color: white;
+       /* optional: improves visibility */
+}
+/* iPhone SE, 6, 7, 8 (small) */
+@media only screen and (max-width: 375px) {
+  body {
+    font-size: 14px;
+  }
+  input, select, textarea {
+    width: 70% !important;
+    font-size: 18px;
+  }
+  h1 {
+    font-size: 45px;
+  }
+}
+
+/* iPhone 6/7/8 Plus, X, 11 Pro (medium) */
+@media only screen and (min-width: 376px) and (max-width: 414px) {
+  body {
+    font-size: 15px;
+  }
+  input, select, textarea {
+    width: 70% !important;
+    font-size: 10px;
+    padding: 0;
+  }
+  h1 {
+    font-size: 32px;
+  }
+}
+
